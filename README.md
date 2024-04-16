@@ -2,7 +2,9 @@
 
 [Github](https://github.com/atakanbaskor/JavaScript_First_Step)
 
-Terminal
+---
+
+## Npm Install
 
 ```sh
 node -v
