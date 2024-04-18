@@ -72,11 +72,30 @@
 // alert("Merhaba. " + kullaniciAdi + "!");
 
 // # Math
-console.log(Math.PI);
-console.log(Math.E);
-console.log(Math.sqrt(25));
-console.log(Math.pow(2, 5));
+// console.log(Math.PI);
+// console.log(Math.E);
+// console.log(Math.sqrt(25));
+// console.log(Math.pow(2, 5));
 
 // # Escape Characters
-console.log("Merhaba Ben \n \t \r Atakan");
-console.log("Merhaba Ben \n \r Atakan");
+// console.log("Merhaba Ben \n \t \r Atakan");
+// console.log("Merhaba Ben \n \r Atakan");
+
+//type of
+
+// let data = 44;
+// console.log(typeof data);
+// let nName = "atakan";
+// console.log(typeof nName);
+
+//Instanceof
+
+// let objectInstants = new Number(44);
+// console.log(objectInstants instanceof Number);
+
+//New : Doğdu
+let dataNew = new Number(44);
+console.log(dataNew);
+//Null : Öldu
+dataNew = null;
+console.log(dataNew);
