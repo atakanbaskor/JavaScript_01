@@ -139,11 +139,11 @@ multi Comment
 
 ////////////////////////////////////////////////////
 // Escape Characters
-// console.log("Merhaba \"Atakan Frontend");
-// console.log("Merhaba \'Atakan Frontend");
-// console.log("Merhaba \'Atakan\n Frontend");
-// console.log("Merhaba \'Atakan\n\t Frontend");
-// console.log("Merhaba \'Atakan\n\r Frontend");
+// console.log('Merhaba "Atakan Frontend');
+// console.log("Merhaba 'Atakan Frontend");
+// console.log("Merhaba 'Atakan\n Frontend");
+// console.log("Merhaba 'Atakan\n\t Frontend");
+// console.log("Merhaba 'Atakan\n\r Frontend");
 
 ////////////////////////////////////////////////////
 // // Typeof
@@ -169,8 +169,8 @@ multi Comment
 // console.log(dataNew);
 
 // // undefined
+// dataNumber = 99;
 // let dataNumber;
-// dataNumber=99;
 // console.log(dataNumber);
 
 // // NaN
@@ -245,36 +245,36 @@ multi Comment
 ////////////////////////////////////////////////////
 //  Metinsel İşlemler
 
-// let AtakanMetinsel="javascript ÖĞReniyorUM javascript ";
-// let AtakanMetinsel2="html5,css3,js";
+// let AtakanMetinsel = "javascript ÖĞreniyoruM javascript ";
+// let AtakanMetinsel2 = "html5,css3,js";
 
 // // BOŞLUKLAR
 // console.log(AtakanMetinsel);
 // console.log(AtakanMetinsel.length);
-// console.log(AtakanMetinsel.trim().length);
+// console.log(AtakanMetinsel.trim().length); //trim():Başında veya sonundaki ki boşlukları alır. Şifrelerde kullanılılabilir.
 
 // // BÜYÜK KÜÇüK HARF
 // console.log(AtakanMetinsel.toUpperCase());
 // console.log(AtakanMetinsel.toLowerCase());
 
 // // ARAMA
-// console.log(AtakanMetinsel.indexOf("javascript"));
+// console.log(AtakanMetinsel.indexOf("javascript")); // Metini kaçıncı sıradan başladığını bulur.
 // console.log(AtakanMetinsel.lastIndexOf("javascript"));
 // console.log(AtakanMetinsel.includes("javascript"));
 
 // // BİRLEŞTİRME
-// console.log(AtakanMetinsel+" "+AtakanMetinsel2);
-// console.log(AtakanMetinsel.concat(AtakanMetinsel2));
+// console.log(AtakanMetinsel + " " + AtakanMetinsel2);
+// console.log(AtakanMetinsel.concat(AtakanMetinsel2, " ", AtakanMetinsel));
 
-// // PARÇALAMA
+// // // PARÇALAMA
 // console.log(AtakanMetinsel.substring(3));
-// console.log(AtakanMetinsel.substring(0,3));
+// // console.log(AtakanMetinsel.substring(0,3));
 
 // // DEĞİŞTİRME
 // console.log(AtakanMetinsel.replace("javascript","Atakan"));
 
 // /// CHARAT
-// console.log(AtakanMetinsel.charAt(1));
+// console.log(AtakanMetinsel.charAt(0));
 
 // // WITH
 // console.log(AtakanMetinsel.startsWith("javascript"));
@@ -290,215 +290,215 @@ multi Comment
 ////////////////////////////////////////////////////
 //  Function
 // 1-) returnsuz Parametresiz
-// function returnsuzParametresiz(){
-//     console.log("Merhaba Atakan");
+// function returnsuzParametresiz() {
+//   console.log("Merhaba Atakan");
 // }
 // returnsuzParametresiz();
 
-// // 2-) returnsuz Parametreli
-// function returnsuzParametreli(kelime,number){
-//     console.log("Merhaba Atakan "+kelime+" "+number);
+// // // 2-) returnsuz Parametreli
+// function returnsuzParametreli(kelime, number) {
+//   console.log("Merhaba Atakan " + kelime + " " + number);
 // }
-// returnsuzParametreli("Javascript",44);
+// returnsuzParametreli("Javascript", 44);
 
-// // 3-) returnlu Parametresiz
-// function returnluParametresiz(){
-//     return "Merhaba Atakan"
+// 3-) returnlu Parametresiz
+// function returnluParametresiz() {
+//   return "Merhaba Atakan";
 // }
-// let param3= returnluParametresiz();
+// let param3 = returnluParametresiz();
 // console.log(param3);
 
-// // 4-) returnlu Parametresiz
-// function returnluParametreli(isLogin){
-//     return isLogin;
+// // // 4-) returnlu Parametresiz
+// function returnluParametreli(isLogin) {
+//   return isLogin;
 // }
-// let param4= returnluParametreli(false);
+// let param4 = returnluParametreli(false);
 // console.log(param4);
 
 ////////////////////////////////////////////////////
 //  Function Türleri
 // Immedia Function
 // (function () {
-//     console.log("Immedia Function - Anonymous Function");
+//   console.log("Immedia Function - Anonymous Function");
 // })();
 
 // (() => {
-//     console.log("Immedia Function -Arrow Function");
+//   console.log("Immedia Function -Arrow Function");
 // })();
 
 // // Normal function
 // function toplama(x, y) {
-//     return x + y;
-//  }
-// console.log(toplama(5, 6));
+//   return x + y;
+// }
+// console.log(toplama(9, 6));
 
-// // Anonymous function
+// //  Anonymous function
 // let toplama2 = function (x, y) {
-//      return x + y;
-//     }
+//   return x + y;
+// };
 // console.log(toplama2(5, 6));
 
 // // Arrow function
 // const toplama3 = (x, y) => {
-//     return x + y;
-//  }
+//   return x + y;
+// };
 // console.log(toplama3(5, 6));
 
 ////////////////////////////////////////////////////
 //  Conditional (Karar)
-const conditional = () => {
-  let isLogin = true;
-  //if(isLogin==="true"){
-  //if(isLogin=="true"){
-  // if (isLogin) {
-  //     console.log("Giriş yapıldı");
-  // } else {
-  //     console.log("Giriş yapılmadı");
-  // }
-  if (isLogin) console.log("Giriş yapıldı");
-  else console.log("Giriş yapılmadı");
-};
-//conditional();
+// const conditional = () => {
+//   let isLogin = true;
+//   //if(isLogin==="true"){
+//   //if(isLogin=="true"){
+//   // if (isLogin) {
+//   //     console.log("Giriş yapıldı");
+//   // } else {
+//   //     console.log("Giriş yapılmadı");
+//   // }
+//   if (isLogin) console.log("Giriş yapıldı");
+//   else console.log("Giriş yapılmadı");
+// };
+// conditional();
 
-const conditional3 = () => {
-  let isMuul = 0;
-  if (isMuul > 0) {
-    console.log("Pozitif Sayı");
-  } else if (isMuul < 0) {
-    console.log("Negatif Sayı");
-  } else {
-    console.log("Sıfırdır");
-  }
-};
-//conditional3();
+// const conditional3 = () => {
+//   let isMuul = 0;
+//   if (isMuul > 0) {
+//     console.log("Pozitif Sayı");
+//   } else if (isMuul < 0) {
+//     console.log("Negatif Sayı");
+//   } else {
+//     console.log("Sıfırdır");
+//   }
+// };
+// conditional3();
 
-//////////////////////////////////////////////////////
-// Ternary
-const conditional2 = () => {
-  let isMuul = -9;
-  if (isMuul > 0) {
-    console.log("Pozitif Sayı");
-  } else {
-    console.log("Negatif Sayı");
-  }
-};
-//conditional2();
+// //////////////////////////////////////////////////////
+// // Ternary
+// const conditional2 = () => {
+//   let isMuul = -9;
+//   if (isMuul > 0) {
+//     console.log("Pozitif Sayı");
+//   } else {
+//     console.log("Negatif Sayı");
+//   }
+// };
+// //conditional2();
 
-const conditionalTernary = () => {
-  let isMuul = -9;
-  let result = isMuul > 0 ? "Pozitif Sayı" : "Negatif Sayı";
-  console.log(result);
-};
-//conditionalTernary()
+// const conditionalTernary = () => {
+//   let isMuul = -9;
+//   let result = isMuul > 0 ? "Pozitif Sayı" : "Negatif Sayı";
+//   console.log(result);
+// };
+// //conditionalTernary()
 
-//////////////////////////////////////////////////////
-//  Switch-case
-const conditionalIfElse = () => {
-  let isMuul = 0;
-  if (isMuul == 0) {
-    console.log("Sıfır");
-  } else if (isMuul == 1) {
-    console.log("Bir");
-  } else if (isMuul == 2) {
-    console.log("İki");
-  } else {
-    console.log("Bilinmiyor");
-  }
-};
-//conditionalIfElse()
+// //////////////////////////////////////////////////////
+// //  Switch-case
+// const conditionalIfElse = () => {
+//   let isMuul = 0;
+//   if (isMuul == 0) {
+//     console.log("Sıfır");
+//   } else if (isMuul == 1) {
+//     console.log("Bir");
+//   } else if (isMuul == 2) {
+//     console.log("İki");
+//   } else {
+//     console.log("Bilinmiyor");
+//   }
+// };
+// //conditionalIfElse()
 
-const conditionalSwitch = () => {
-  let isMuul = 0;
-  switch (isMuul) {
-    case 0:
-      console.log("Sıfır");
-      break;
-    case 1:
-      console.log("Bir");
-      break;
-    case 2:
-      console.log("İki");
-      break;
-    default:
-      console.log("Bilinmiyor");
-      break;
-  }
-};
-//conditionalSwitch()
+// const conditionalSwitch = () => {
+//   let isMuul = 0;
+//   switch (isMuul) {
+//     case 0:
+//       console.log("Sıfır");
+//       break;
+//     case 1:
+//       console.log("Bir");
+//       break;
+//     case 2:
+//       console.log("İki");
+//       break;
+//     default:
+//       console.log("Bilinmiyor");
+//       break;
+//   }
+// };
+// //conditionalSwitch()
 
-//////////////////////////////////////////////////////
-// LOOP
-const forLoop = () => {
-  let value = "Atakan For";
-  for (let i = 1; i <= 5; i++) {
-    console.log(value + i);
-  }
+// //////////////////////////////////////////////////////
+// // LOOP
+// const forLoop = () => {
+//   let value = " For";
+//   for (let i = 1; i <= 5; i++) {
+//     console.log(value + i);
+//   }
 
-  //sonsuz döngü
-  // for(;;){}
-};
-//forLoop()
+//   //sonsuz döngü
+//   // for(;;){}
+// };
+// forLoop();
 
-//console.log("***********************");
-const whileLoop = () => {
-  let value = "Atakan While";
-  let i = 1;
-  while (i <= 5) {
-    console.log(value + i);
-    i = i + 1;
-  }
+// //console.log("***********************");
+// const whileLoop = () => {
+//   let value = "Atakan While";
+//   let i = 1;
+//   while (i <= 5) {
+//     console.log(value + i);
+//     i = i + 1;
+//   }
 
-  //sonsuz döngü
-  // while(true){}
-};
-//whileLoop();
+//   //sonsuz döngü
+//   // while(true){}
+// };
+// whileLoop();
 
-//console.log("***********************");
-const doWhileLoop = () => {
-  let value = "Atakan do-While ";
-  let i = 1;
-  do {
-    console.log(value + i);
-    //i++;
-    //i=i+1;
-    i += 1;
-  } while (i <= 5);
-  //sonsuz döngü
-  // while(true){}
-};
-//doWhileLoop()
+// //console.log("***********************");
+// const doWhileLoop = () => {
+//   let value = "Atakan do-While ";
+//   let i = 1;
+//   do {
+//     console.log(value + i);
+//     //i++;
+//     //i=i+1;
+//     i += 1;
+//   } while (i <= 5);
+//   //sonsuz döngü
+//   // while(true){}
+// };
+// doWhileLoop();
 
-//////////////////////////////////////////////////////
-// Exception Handling
-const exceptionHandling = () => {
-  //const result=10/0;
-  try {
-    alertx("alert");
-  } catch (err) {
-    console.error(err);
-  } finally {
-    console.warn("Burası mutlaka çalışmalıdır.");
-  }
-  console.log("Merhabalar-1");
+// //////////////////////////////////////////////////////
+// // Exception Handling
+// const exceptionHandling = () => {
+//   //const result=10/0;
+//   try {
+//     alertx("alert");
+//   } catch (err) {
+//     console.error(err);
+//   } finally {
+//     console.warn("Burası mutlaka çalışmalıdır.");
+//   }
+//   console.log("Merhabalar-1");
 
-  // THROW
-  throw new Error("Neden sayıyı sıfıra böldün");
-};
-//exceptionHandling();
+//   // THROW
+//   throw new Error("Neden sayıyı sıfıra böldün");
+// };
+// //exceptionHandling();
 
-//////////////////////////////////////////////////////
-// Debug
-const debugData = () => {
-  let value = "Atakan For ";
-  for (let i = 1; i <= 5; i++) {
-    console.log(value + i * 1);
+// //////////////////////////////////////////////////////
+// // Debug
+// const debugData = () => {
+//   let value = "Atakan For ";
+//   for (let i = 1; i <= 5; i++) {
+//     console.log(value + i * 1);
 
-    if (i == 4) {
-      //debugger;
-    }
-  }
-};
-//debugData();
+//     if (i == 4) {
+//       //debugger;
+//     }
+//   }
+// };
+// //debugData();
 
 //////////////////////////////////////////////////////
 // SetTimeOut
@@ -667,7 +667,7 @@ const arrayFunction = () => {
   array[6] = 7;
   array[7] = 9;
   //console.log(array);
-  document.writeln(array);
+  document.writeln(array); // document.writelb() : Ekrana yazdırmamızı sağlıyor.
   document.writeln("<br/>");
   document.writeln(array[0]);
   document.writeln("<br/>");
@@ -890,6 +890,9 @@ const arrayMethod4 = () => {
 
 //////////////////////////////////////////////////////
 // Multiline,Interpolation,Html Template
+// `: option + , basınca çıkıyor.
+// || : option + < basınca çıkıyor.
+// ~ : option + n basınca çıkıyor.
 const data1 = () => {
   // Multiline,
   let multilineAtakan = ` 1.satır
